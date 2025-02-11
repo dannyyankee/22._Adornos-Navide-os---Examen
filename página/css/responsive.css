@@ -1,0 +1,133 @@
+@media(min-width:460px){
+    .aside{
+        display: none;
+    }
+    .article__header{
+        display:none;
+    }
+    .aside__header{
+        display:none;
+    }
+    .aside__text{
+        display:none;
+    }
+}
+@media(min-width:480px){
+    .article__header{
+        display:block;
+    }
+    .article__footer-text{
+        display:block;
+        border-left:1px solid grey;
+        padding-left: 10px;
+    }
+}
+@media(min-width:600px){
+    .nav__item{
+        margin:7px;
+        font-size: 1.1rem;
+    }
+    .article__image{
+        display: block;
+        filter: grayscale(90%);
+    }
+}
+@media(min-width:768px){
+    .article__body{
+        display: flex;
+        justify-content: space-between;
+    }
+    .article__image{
+        width: 50%;
+        filter: grayscale(90%);
+    }
+    .article__text{
+        padding: 20px 25px;
+    }
+}
+@media(min-width:850px){ /*cambiar por el de 1024*/
+    .header__h1{
+        display: block;
+    }
+    .header{
+        justify-content: flex-end;
+    }
+    .nav{
+        justify-content: flex-end;
+        width: 60%;
+    } 
+    .article__header{
+        display:flex;
+    } 
+    .article__data{
+        display: block;
+        width: 35%;
+        text-align: center;
+        align-items: center;
+    } 
+    .article__title{
+        text-align: left;
+        width: 65%;
+    }
+    .article__p{
+        text-align: left;
+    }
+    .article__body{
+        flex-wrap: wrap;
+    }
+    .article__image{
+        width: 100%;
+        filter: grayscale(90%);
+    }
+}
+@media(min-width:950px){/*cambiar por el de 1200*/
+    .container{
+        display: grid;
+        grid-template-columns: 25% 75% ;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header header"
+        "aside articles";
+    }
+    .aside{
+        display: block;
+    }
+    .aside__header{
+        display:block;
+        font-size: 0,7rem;
+    }
+    .aside__text{
+        display:block;
+    }
+}
+@media(min-width:1000px){/*cambiar por el de mas de  1200*/
+    .container{
+        display: grid;
+        grid-template-columns: 15%  25% 60% ;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header aside articles";
+    }
+    .nav__list{
+        display: block;
+    }
+    .header__h1{
+        display: none;
+    }
+    .header{
+        align-items: start;
+        justify-content: center;
+        background-color: #ecebeb;
+    }
+    .nav{
+        background-color: #ecebeb;
+    }
+    .nav__item{
+        font-size: 1.4rem;
+        color: #646464;
+        border-bottom: 1.5px solid#646464;
+    }
+    .nav__list{
+        padding: 50px 0 20px 0;
+    }
+}
